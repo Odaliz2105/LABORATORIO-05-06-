@@ -18,7 +18,8 @@ function App() {
     <BrowserRouter>
       <Routes>
 
-        <Route path="/fundamentos" element={<LandingPage />}>
+        <Route path="/" element={<LandingPage />}>
+          <Route index element={<Primero />} />
           <Route path="fundamentos" element={<Primero />} />
           <Route path="usestate" element={<Segundo />} />
           <Route path="useffect" element={<Tercero />} />
