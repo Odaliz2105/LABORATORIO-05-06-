@@ -8,6 +8,7 @@ import Cuarto from "./pages/Cuarto";
 import Quinto from "./pages/Quinto";
 import Septimo from "./pages/Septimo";
 import Noveno from "./pages/Noveno";
+import Decimo from "./pages/Decimo";
 
 
 
@@ -17,7 +18,7 @@ function App() {
     <BrowserRouter>
       <Routes>
 
-        <Route path="/" element={<LandingPage />}>
+        <Route path="/fundamentos" element={<LandingPage />}>
           <Route path="fundamentos" element={<Primero />} />
           <Route path="usestate" element={<Segundo />} />
           <Route path="useffect" element={<Tercero />} />
@@ -25,6 +26,7 @@ function App() {
           <Route path="props" element={<Quinto />} />
           <Route path="zustand" element={<Septimo />} />
           <Route path="rederizado" element={<Noveno />} />
+          <Route path="localStorage" element={<Decimo />} />
         </Route>
 
       </Routes>

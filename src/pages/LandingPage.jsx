@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link, Outlet, useLocation } from 'react-router'
 
-
 const LandingPage = () => 
 {
 
@@ -30,6 +29,8 @@ const LandingPage = () =>
           <Link to='/zustand' className={`${urlActual === '/zustand' ? 'text-blue-300 underline' : 'text-white'} text-2xl block mt-2 hover:text-blue-200`}>Zustand</Link>
           
           <Link to='/rederizado' className={`${urlActual === '/rederizado' ? 'text-blue-300 underline' : 'text-white'} text-2xl block mt-2 hover:text-blue-200`}>Renderizado</Link>
+          
+          <Link to='/localstorage' className={`${urlActual === '/localstorage' ? 'text-blue-300 underline' : 'text-white'} text-2xl block mt-2 hover:text-blue-200`}>localStorage</Link>
           
         </nav>
 
