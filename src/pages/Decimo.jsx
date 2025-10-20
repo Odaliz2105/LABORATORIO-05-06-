@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 export default function NombreUsuario() {
   const [nombre, setNombre] = useState('')
 
-  // ✅ Al montar el componente, cargar el nombre guardado (si existe)
+  // Al montar el componente, cargar el nombre guardado (si existe)
   useEffect(() => {
     const nombreGuardado = localStorage.getItem('nombreUsuario')
     if (nombreGuardado) {
