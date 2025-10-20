@@ -12,12 +12,12 @@ import { useState } from "react"
 const Noveno = () => {
 
   const [login, setLogin] = useState(false)
-  const [habilidades] = useState([
-    { nombre: "HTML", icono: "📙" },
-    { nombre: "CSS", icono: "📘" },
-    { nombre: "JavaScript", icono: "📒" },
-    { nombre: "React", icono: "⚛️" },
-    { nombre: "Node.js", icono: "📗" },
+  const [productos] = useState([
+    { nombre: "Camiseta"},
+    { nombre: "Pantalon" },
+    { nombre: "Zapato" },
+    { nombre: "Mochina" },
+    { nombre: "Chompa"},
   ])
 
   return (
@@ -43,7 +43,7 @@ const Noveno = () => {
           {login 
             ? 
           (
-            <p>¡Bienvenido de nuevo! 😎 </p>
+            <p>El total de ventas mensuales es de $5000 </p>
           ) 
             : 
           (
@@ -51,7 +51,7 @@ const Noveno = () => {
           )}
 
           <button className="mt-2 bg-blue-600 text-white py-1 px-3 rounded" onClick={() => setLogin(!login)}>
-            {login ? "Cerrar sesión" : "Iniciar sesión"}
+            {login ? "Cerrar sesión" : "Ingresar como administrador"}
           </button>
 
         </div>
@@ -62,13 +62,13 @@ const Noveno = () => {
 
         <div className=" border rounded-lg p-4 w-120 mx-auto text-center">
 
-          <h2 className="text-1xl font-bold text-left underline mb-4">Listas</h2>
+          <h2 className="text-1xl font-bold text-left underline mb-4">Productos</h2>
           
             <ul className="list-disc pl-5 text-left">
               
-              {habilidades.map((habilidad, index) => (
+              {productos.map((producto, index) => (
       
-                <li key={index}>{habilidad.icono} - {habilidad.nombre}</li>
+                <li key={index}>{producto.icono} - {producto.nombre}</li>
       
               ))}
             
